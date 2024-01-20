@@ -1,0 +1,110 @@
+
+{% extends 'base.html' %}
+{% block head%}
+<title>Our Story</title>
+{% endblock %}
+
+{% block body%}
+      <header>
+        <div class="about-us-header">
+            <div class="overlay"></div>
+            
+            <div class="header-content">
+                <h1>About Us</h1>
+                <p style="font-weight: bold;">Authentic Italian Cuisine</p>
+                <small>Since 1990</small>
+            </div>
+            
+        </div>
+
+      </header>
+
+      <section class="ourstory-section">
+        <div>
+            <div class="ourstory-section-text">
+                <p class="">TASTY AND CRUNCHY</p>
+
+                <h1>Our Story</h1>
+                <p>Experience the heart and soul of Italian cuisine with our mouthwatering mains. From rich and comforting pasta dishes to savory risottos and hearty meat options, our mains showcase the diverse and delectable flavors of Italy.</p>
+            </div>
+
+            <div class="aboutus-cards">
+                <div class="card">
+                    <img src="https://www.expats.cz/images/publishing/articles/2019/08/1280_650/hand-picked-by-locals-prague-s-most-authentic-italian-cuisine-jpg-tmshd.webp" alt="Card Image 1">
+                    <div class="card-content">
+                        <h2>A family business</h2>
+                        <p>Lala Pizza was opened first in 1990 by Fran in Naples</p>
+                        
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img src="https://blog.hellofresh.com.au/wp-content/uploads/2016/05/HF160322_Global_Blog_Essential-Italian-Ingredient-Guide_01_quer_low.jpg" alt="Card Image 2">
+                    <div class="card-content">
+                        <h2>Artisanal Pasta Creations</h2>
+                        <p>Indulge in our artisanal pasta creations, handcrafted with care and passion. From timeless classics to innovative twists, each dish showcases the artistry and dedication that make our pasta truly exceptional.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://www.tastingtable.com/img/gallery/21-essential-italian-cooking-terms-you-should-know/l-intro-1695910770.jpg" alt="Card Image 3">
+                    <div class="card-content">
+                        <h2>Fresh and Organic</h2>
+                        <p>At our Italian restaurant, we pride ourselves on using only the freshest and organically sourced ingredients to create a delightful dining experience for our customers. </p>
+                    </div>
+                </div>                <div class="card">
+                    <img src="https://zbr.com.mx/wp-content/uploads/2023/12/compressed_img-FGaiDBJpN7HDWH5GyVd8IEKi.png" alt="Card Image 4">
+                    <div class="card-content">
+                        <h2>Traditional dishes</h2>
+                        <p>Savor the authenticity of Italy with our menu featuring a selection of traditional dishes, each meticulously prepared to capture the rich flavors and culinary heritage of Italian cuisine.</p>
+                    </div>
+                </div>                <div class="card">
+                    <img src="https://assets.website-files.com/62336fe5800f42713fafcc1c/6481b87c468140038c1b83ad_4f000856f15cafeb36d9b9f8493999d9.jpg" alt="Card Image 5">
+                    <div class="card-content">
+                        <h2>Rated the best Italian Resturant</h2>
+                        <p>Discover the excellence that has earned us the reputation of being rated the best Italian restaurant, where every dish is a testament to our commitment to quality, taste, and an unparalleled dining experience</p>
+                    </div>
+                </div>                <div class="card">
+                    <img src="https://burst.shopifycdn.com/photos/shellfish-pasta-pizza-and-italian-food.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="Card Image 6">
+                    <div class="card-content">
+                        <h2>Seasonal Delights</h2>
+                        <p>Experience the essence of each season with our curated menu of seasonal delights. Our chefs skillfully incorporate fresh, seasonal ingredients to bring you a rotating selection of dishes that reflect the vibrant flavors of the moment.</p>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+        
+      </section>
+
+      <section class="location">
+        <div class="">
+            <p>TASTY AND CRUNCHY</p>
+            <h2>CHECK OUT OUR LOCATION</h2>
+            <a href="" class="location-btn">Open MAPS</a>
+        </div>
+
+    </section>
+    <section class="offer-section">
+        <div>
+            <p class="center-text">TASTY AND CRUNCHY</p>
+            <h2 class="center-text">Antipasti Deliziosi (Delicious Starters)</h2>
+            <div class="row">
+                {% for starter in starters %}
+                <div class="col-sm-4 mb-4 ">
+                  <div class="card card-offer">
+                    {% if starter.image_url %}
+                    <img src="{{ starter.image_url }}" alt="{{ starter.title }} Image" class="card-img-top">
+                {% endif %}
+    
+                    <div class="card-body">
+                      <h5 class="card-title">{{ starter.title }}</h5>
+                      <p class="card-text">{{ starter.description }}</p>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+        </div>
+    </section>
+{% endblock %}

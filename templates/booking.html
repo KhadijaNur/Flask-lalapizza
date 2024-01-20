@@ -1,0 +1,41 @@
+<section class="booking">
+    <div>
+
+            <div class="reservation-form">
+                <p class="center-text">TASTY AND CRUNCHY</p>
+                <h2 class="center-text">Book a Table</h2>
+                <p class="center-text">Reserve your table now for a taste of culinary perfection. <br>Indulge in an unforgettable dining experience with us</p>
+
+
+<form class="form-mainpage booking-form" action="{{ url_for('book') }}" method="post" >
+    {{ form.csrf_token }}
+    
+    <div class="form-group">
+      <label for="date">Date:</label>
+      {{ form.date }}
+    </div>
+
+    <div class="form-group">
+      <label for="time">Time:</label>
+      {{ form.time }}
+      <small>We are open from 13:00 to 00:00</small>
+    </div>
+
+    <div class="form-group">
+      <label for="num_people">Number of People:</label>
+      {{ form.num_people }}
+    </div>
+
+    <div class="form-group">
+      <label for="name">Your Name:</label>
+      {{ form.name }}
+    </div>
+
+    <button type="submit" class="submit-button">Submit Reservation</button>
+
+  </form>
+
+            </div>
+
+    </div>
+</section>

@@ -1,0 +1,1067 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ h1 {
+    font-size: calc(1.375rem + 1.5vw);
+}
+.center-text{
+    text-align: center;
+}
+
+#mynav {
+    background-color: #527853 !important;
+    padding: auto 30px;
+    text-align: center;
+
+}
+nav h2{
+    padding-left: 4px !important;
+    font-size: 20px;
+    display: inline-block;
+}
+
+
+#mynav a {
+    text-decoration: none;
+    color: #F9E8D9;
+    font-size: 28px;
+    padding-left: 10px !important;
+}
+
+#mynav a:hover {
+    color: #EE7214;
+}
+
+#mynav i {
+    margin-right: 8px;
+}
+.mynav-item{
+    margin: 3px !important;
+}
+
+.landing-container {
+
+    padding: 20px 0px;
+    height: 95vb;    
+    background-image: linear-gradient(100deg, #01352ad5 0%, rgba(83, 186, 182, 0.868) 100%), url(https://www.hotelmousai.com/blog/wp-content/uploads/2021/12/Top-10-Traditional-Foods-in-Italy.jpg);    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.landing-primary-heading {
+    color: #fff;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-item {
+    box-sizing: border-box;
+    width: 100%; 
+    padding: 40px 20px 0px;
+    color: #fff;
+}
+
+@media (min-width: 990px) {
+    .flex-container{
+        align-items: center;
+    }
+    .flex-item {
+        width: 48%; 
+        padding-top: 50px !important;
+    }
+    .composition-img{
+        width: 75%;
+    }
+    .landing-container{
+        padding: 40px 0px;
+    }
+    .landing-text{
+        padding-top: 80px !important;
+    }
+
+}
+.landing-text{
+    padding-top: 20px;
+    word-wrap: normal;
+}
+.landing-text h1{
+    font-size: 62px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+.landing-text p{
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+.btn-text:link, .btn-text:visited {
+    font-size: 1.6rem;
+    color: #F9E8D9;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #527853;
+    padding: 3px;
+    transition: all 0.2s; }
+  
+.btn-text:hover {
+    background-color: #527853;
+    color: #EE7214;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); }
+  
+.btn-text:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
+.composition {
+
+}
+.composition-img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+      width: 75%;
+      box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      transition: all 0.2s;
+       }
+
+.flex-img{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.composition-img:hover {
+        transform: scale(1.05) translateY(-2rem);
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+        z-index: 20; }
+.img-container img:hover {
+    transform: scale(1.05) translateY(-2rem);
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20;
+}
+
+.composition:hover .composition-img:not(:hover) {
+    transform: scale(0.95); }
+#SPECIALTIES{
+    padding: 120px 60px 60px;
+    text-align: center;
+
+}
+.specialties-div{
+    padding: 30px 0;
+    color: #234126;
+}
+.specialties-tab{
+    text-align: left;
+    padding-top: 30px;
+}
+    .tab-container {
+        display: flex;
+        justify-content: space-around;
+        border-bottom: 2px solid #ccc;
+        margin-bottom: 20px;
+        padding: 10px 10px 0px;
+
+    }
+
+    .tab {
+        cursor: pointer;
+        padding: 10px 20px;
+
+    }
+
+    .tab.active {
+        border-bottom: 3px solid #4F6F52; 
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .tab-container {
+            flex-direction: column;
+        }
+    }
+    .dish1{
+        width: 100%;
+        height: auto;
+    }
+
+    #menu{
+        height: 500px;
+        background-image: linear-gradient(100deg, #265a4e55 0%, rgba(83, 186, 182, 0.402) 100%),url('/static/images/menu-img.png');
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+  }
+    .menu-btn {
+        display: inline-block;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        color: #fff;
+        background: linear-gradient(to right, #527853, #527853); 
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+        text-decoration: none;
+    }
+    
+.menu-btn:hover {
+    background: linear-gradient(to right, #EE7214, #EE7214);
+}
+
+.offer-section{
+    padding: 100px 80px;
+    width: 85%;
+    margin: 0 auto;
+    color: #234126 !important;
+
+}
+.card-img-top {
+    height: 200px ;
+    width: auto;
+    object-fit: cover;
+    border-radius: 0 !important;
+
+}
+
+.card-offer{
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.booking{
+    background-color: #fff;
+}
+.reservation-form {
+    max-width: 70%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.location{
+    height: 500px;
+    background-image: linear-gradient(100deg, #ee72143b 0%, #9d572128 100%),url('/static/images/table.jpeg');
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+.location-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to right, #EE7214, #EE7214); 
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    text-decoration: none;
+
+}
+
+.location-btn:hover {
+background: linear-gradient(to right, #527853, #527853);
+}
+
+.booking{
+    padding: 80px 40px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #527853;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #EE7214;
+}
+
+footer {
+    background-color: #527853;
+    color: #F9E8D9;
+    padding: 30px 0;
+    text-align: center;
+}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-section a {
+    color: #F9E8D9;
+    text-decoration: none !important;
+}
+
+.footer-section a:hover {
+    text-decoration: underline !important;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+.inline-block{
+    display: inline-block;
+    padding: 8px 12px;
+}
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #F9E8D9;
+    font-size: 20px;
+}
+footer a:hover{
+    color:#EE7214;
+}
+
+.chefs-header {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    height: 85vb;
+    overflow: hidden;
+    margin-bottom: 30px;
+    color: #234126;
+}
+
+.text-section {
+    margin-left: 60px;
+    flex: 1;
+    order: 1; 
+    text-align: left;
+}
+.text-section h1{
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.text-section p{
+    font-size: 24px;
+    color: #527853;
+}
+.image-section {
+    width: 600px;
+    flex: 1;
+    order: 2; 
+    text-align: left;
+    overflow: hidden;
+}
+
+.image-section img {
+    max-width: 75%;
+    height: auto;
+}
+
+@media (max-width: 767px) {
+    .text-section,
+    .image-section {
+        flex: 1 100%;
+        order: initial; 
+        text-align: left;
+        margin-bottom: 10px; 
+    }
+    .image-section{
+        text-align: center;
+    }
+}
+
+.flag-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(to right, green, green 33.33%, white 33.33%, white 66.66%, red 66.66%, red);
+    content: "";
+}
+
+.chefs{
+    padding: 50px 0 30px;
+    color: #234126;
+
+}
+.chefs h2{
+    color: #234126;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:500;
+    font-size: 48px;
+
+}
+
+.chef-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.chef-card {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.chef-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.chef-details {
+    padding: 20px;
+}
+
+.chef-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.chef-city {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.chef-speciality {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.chef-description {
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .chef-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .chef-card {
+        width: calc(33.33% - 20px); 
+        margin-right: 20px;
+
+    }
+
+    .chef-card:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.feature-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    font-family: 'Covered By Your Grace', cursive;
+    margin: 40px 0;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.overlay p {
+    font-size: 45px;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 10px; 
+}
+
+.feature-box {
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    height: 400px;
+}
+
+.feature-box img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+
+}
+.view-more {
+    background-color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.feature-box:hover .overlay,
+.feature-box:hover .view-more {
+    opacity: 1; 
+}
+.feature-box-img1{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/591/724/868/food-cheese-italian-baked-wallpaper-preview.jpg);
+}
+.feature-box-img2{
+    background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/60105b174977731.Y3JvcCwxMDQzLDgxNiwyMDYsMA.jpg);
+}
+.feature-box-img3{
+    background-image: url(https://drop.ndtv.com/albums/COOKS/Italian_Cuisine_637626308182500137/637626308197754573.jpeg);
+}
+@media (max-width: 767px) {
+    .feature-box {
+        flex: 1 100%;
+        height: 320px;
+    }
+    .view-more{
+        opacity: 1;
+    }
+}
+
+
+.about-us-header {
+    position: relative;
+    background: url('https://cdn.pixabay.com/photo/2021/12/30/11/33/italian-cuisine-6903774_1280.jpg') center/cover; /* Replace 'background-image.jpg' with your image URL */
+    color: #fff; 
+    text-align: center;
+    height: calc(100vh - 40px); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-us-header h1 {
+    margin: 0;
+    font-size: 80px;
+    opacity: 0; 
+    animation: fadeIn 1.5s forwards;
+    font-family:Arial, Helvetica, sans-serif;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-us-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #55555573;
+}
+
+.about-us-header .header-content {
+    z-index: 1;
+}
+
+.ourstory-section{
+    padding: 80px;
+    color: #234126;
+}
+.aboutus-cards {
+    max-width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.aboutus-cards .card {
+    background-color: #fff; 
+    overflow: hidden;
+    display: flex;
+    border: none;
+    flex-direction: column;
+    border-radius: 0%;
+}
+
+.aboutus-cards .card img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.aboutus-cards .card-content {
+    padding: 20px 4px;
+    flex-grow: 1;
+    color: #234126;
+}
+
+.aboutus-cards h2 {
+    margin-top: 0;
+}
+
+.aboutus-cards p {
+    margin: 0;
+    color: #555; 
+}
+
+
+.aboutus-cards .card:nth-child(1) {
+    grid-column: span 3; 
+}
+
+.aboutus-cards .card:nth-child(2) {
+    grid-column: span 1; 
+}
+
+.aboutus-cards .card:nth-child(3) {
+    grid-column: span 2; 
+}
+
+.aboutus-cards .card:nth-child(4) {
+    grid-column: span 2; 
+}
+
+.aboutus-cards .card:nth-child(5) {
+    grid-column: span 1; 
+}
+
+.aboutus-cards .card:nth-child(6) {
+    grid-column: span 3; 
+}
+ 
+@media (max-width: 600px) {
+    .aboutus-cards {
+        grid-template-columns: 1fr; 
+        max-width: 100%;
+
+    }
+
+    .aboutus-cards .card {
+        grid-column: span 1 !important; 
+    }
+    .ourstory-section-text{
+        max-width: 100% !important;
+    }
+}
+.ourstory-section-text{
+    color: #234126;
+    max-width: 75%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+#contactsus-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 700px;
+    margin: 60px 40px;
+
+}
+
+.contactsus {
+    width: 100%;
+    max-width: 600px; 
+    margin: 20px;
+    box-sizing: border-box;
+    color: #234126;
+}
+
+#contactsus-form-container {
+    background-color: #fff; 
+    margin-bottom: 20px;
+    margin: 0 auto;
+}
+
+#contactsus-info-container {
+    background-image: url('https://images.ctfassets.net/qr8kennq1pom/KqNSqM1W1BILITSXgFwpE/92b7e5891bdfafbe1a39366b2b5e8db2/People_having_an_Italian_meal.jpg?fm=jpg&fl=progressive&q=70'); /* Replace with your background image */
+    background-size: cover;
+    position: relative;
+}
+.contactsus form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsus form label {
+    margin-bottom: 8px;
+}
+
+.contactsus form input,
+.contactsus form textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.contactsus form button {
+    background-color: #527853; 
+    color: #fff; 
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.contactsus form button:hover {
+    background-color: #4a6d43; 
+}
+.ontactsus-info-container {
+    font-size: 32px;
+    min-height: 550px;
+}
+.list-unstyled{
+    text-align: center !important;
+}
+.list-unstyled p, .list-unstyled i{
+    font-size: 24px !important;
+
+}
+.list-unstyled p{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.getintouch-text{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 44px;
+}
+
+@media (max-width: 1300px) {
+    #contactsus-container{
+        display: block;
+    }
+    #contactsus-info-container{
+        width: 95%;
+    }
+    #contactsus-info-container {
+        display: none;
+    }
+    .contactsus-info-container-appears-div{
+        display: block !important;
+    }
+
+
+}
+.contactsus-info-container-appears-div{
+    max-width: 100%;
+    display: none;
+    position: relative;
+    height: 600px;
+    background-image: url('https://images.ctfassets.net/qr8kennq1pom/KqNSqM1W1BILITSXgFwpE/92b7e5891bdfafbe1a39366b2b5e8db2/People_having_an_Italian_meal.jpg?fm=jpg&fl=progressive&q=70'); /* Replace with your background image */
+    background-size: cover;
+}
+
+.flag-div{
+    margin: 40px 0;
+    position: relative;
+}
+
+.starters ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.starters li {
+    width: 50%;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    color: #234126 ;
+
+}
+
+.dish-details {
+    width: 100%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.starters h3 {
+    margin: 0;
+    border-bottom: 2px solid #EE7214;
+    padding-bottom: 5px;
+    text-transform: None;
+    letter-spacing: 0.5px;
+    font-family: 'Playfair Display', serif;
+}
+
+
+
+.price {
+    width: 100%;
+    text-align: right;
+    color: #FA7070;
+}
+.starters-div{
+    padding: 60px 40px 40px;
+    width: 70%;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    .starters li {
+        width: 100%; 
+    }
+    .width-reset{
+        width: 100% !important;
+    }
+    .starters-div{
+        width: 90%;
+    }
+}
+
+.starter-text{
+ padding: 30px 15px 44px;
+ color: #234126;
+}
+.starter-text h2{
+    font-family: 'Playfair Display', serif;
+}
+
+
+.get-intouch{
+    padding: 60px 30px 0px;
+    color: #234126 !important;
+    width: 85%;
+    margin: 0 auto;
+}
+.get-intouch h2{
+    text-align: center;
+    margin-bottom: 20px !important;
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 48px;
+}
+.get-intouch{
+    text-wrap: wrap;
+    line-height: 1.5rem;
+    text-align: center;
+    font-family:  'Playfair Display', serif;
+    
+}
+.contact-container{
+    width: 85%;
+    background: #fff;
+
+    margin: 0 auto;
+    padding: 20px 60px 30px 40px;
+
+  }
+  .contact-container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .contact-container .content .contact-left-side{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+  }
+  .content .contact-left-side::before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #EE7214;
+  }
+  .content .contact-left-side .details{
+    margin: 14px;
+    text-align: center;
+  }
+  .content .contact-left-side .details i{
+    font-size: 30px;
+    color: #234126;
+    margin-bottom: 10px;
+  }
+  .content .contact-left-side .details .topic{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .content .contact-left-side .details .text-one,
+  .content .contact-left-side .details .text-two{
+    font-size: 14px;
+    color: #afafb6;
+  }
+  .contact-container .content .contact-right-side{
+    width: 75%;
+    margin-left: 75px;
+  }
+  .content .contact-right-side .topic-text{
+    font-size: 23px;
+    font-weight: 600;
+    color: #234126;
+  }
+  .contact-right-side .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+  }
+  .contact-right-side .input-box input,
+  .contact-right-side .input-box textarea{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+  }
+  .contact-right-side .message-box{
+    min-height: 110px;
+  }
+  .contact-right-side .input-box textarea{
+    padding-top: 6px;
+  }
+  .contactuss-button{
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .contactuss-button{
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #234126;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .contactuss-button input[type="button"]:hover{
+    background: #234126;
+  }
+  @media (max-width: 950px) {
+    .contact-container{
+      width: 90%;
+      padding: 30px 40px 40px 35px ;
+    }
+    .contact-container .content .contact-right-side{
+     width: 75%;
+     margin-left: 55px;
+  }
+  }
+  @media (max-width: 820px) {
+    .contact-container{
+      margin: 40px auto;
+      height: 100%;
+    }
+    .contact-container .content{
+      flex-direction: column-reverse;
+
+    }
+   .contact-container .content .contact-left-side{
+     width: 100%;
+     flex-direction: row;
+     margin-top: 40px;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .contact-container .content .contact-left-side::before{
+     display: none;
+   }
+   .contact-container .content .contact-right-side{
+     width: 100%;
+     margin-left: 0;
+     text-align: center;
+
+   }
+  }

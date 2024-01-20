@@ -1,0 +1,157 @@
+
+ 
+
+
+
+
+
+{% extends 'base.html' %}
+{% block head%}
+<title>Lala Pizza</title>
+{% endblock %}
+
+{% block body%}
+<header >
+    <div class="landing-container">
+        <div class="flex-container " style="width: 85%; margin: 0 auto;">
+            <div class="flex-item landing-text">
+                <h1>Welcome to Lala Pizza</h1>
+                <p>Experience the allure of Lala Pizza. Dive into an Italian culinary journey, where passion meets flavor. Secure your table now for an unforgettable taste adventure at Lala Pizza!</p>
+                <a href="about.html" class="btn-text">Discover the story behind our passion for Italian cuisine.                        &rarr;</a>
+
+            </div>
+        
+            <div class="flex-item">
+                <div class="img-container composition">
+                    <img class="composition-img composition-img-1" id="pizzaimage" onmouseover="changeImage()" onmouseout="restoreImage()" src="{{ url_for('static', filename='images/pizza.png') }}"  alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<section id="SPECIALTIES">
+    <div class="specialties-div">
+    <p>TASTY AND CRUNCHY</p>
+    <h3>THE SPECIALTIES</h3>
+
+    <div class="container specialties-tab">
+        <div class="row">
+            <div class="col-12 col-md-4 first-part">
+                <img src="{{ url_for('static', filename='images/dish1.png') }}"  class="dish1" alt="">
+            </div>
+            
+            <div class="col-12 col-md-8 second-part">
+                <div class="container">
+                    <div class="tab-container">
+                        <div class="tab active" onclick="openTab('starters')">Starters</div>
+                        <div class="tab" onclick="openTab('mains')">Mains</div>
+                        <div class="tab" onclick="openTab('desserts')">Desserts</div>
+                    </div>
+                
+                    <div id="starters" class="tab-content active content">
+                        <h2>Starters</h2>
+                        <p>Indulge in our delicious Italian starters that will tantalize your taste buds and leave you craving for more. From classic bruschetta to flavorful antipasti, our starters set the perfect tone for your Italian dining experience.</p>
+                    </div>
+                
+                    <div id="mains" class="tab-content content">
+                        <h2>Mains</h2>
+                        <p>Experience the heart and soul of Italian cuisine with our mouthwatering mains. From rich and comforting pasta dishes to savory risottos and hearty meat options, our mains showcase the diverse and delectable flavors of Italy.</p>
+                    </div>
+                
+                    <div id="desserts" class="tab-content content">
+                        <h2>Desserts</h2>
+                        <p>Sweeten your Italian culinary journey with our divine desserts. Indulge in the heavenly taste of tiramisu, cannoli, and other traditional Italian sweets that provide the perfect ending to your meal. Each dessert is crafted with passion and tradition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+<section id="menu">
+    <div class="">
+        <p>TASTY AND CRUNCHY</p>
+        <h2>CHECK OUT MENU</h2>
+        <a href="menu.html" class="menu-btn">View Our Menu</a>
+    </div>
+
+</section>
+
+<section class="offer-section">
+    <div>
+        <p class="center-text">TASTY AND CRUNCHY</p>
+        <h2 class="center-text">Primi Piatti Indimenticabili (Unforgettable First Courses)</h2>
+        <div class="row">
+            {% for course in courses %}
+            <div class="col-sm-4 mb-4 ">
+              <div class="card card-offer">
+                {% if course.image_url %}
+                <img src="{{ course.image_url }}" alt="{{ course.title }} Image" class="card-img-top">
+            {% endif %}
+
+                <div class="card-body">
+                  <h5 class="card-title">{{ course.title }}</h5>
+                  <p class="card-text">{{ course.description }}</p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+    </div>
+</section>
+
+<section class="location">
+    <div class="">
+        <p>TASTY AND CRUNCHY</p>
+        <h2>CHECK OUT OUR LOCATION</h2>
+        <a href="" class="location-btn">Open MAPS</a>
+    </div>
+
+</section>
+
+<section class="booking">
+    <div>
+
+            <div class="reservation-form">
+                <p class="center-text">TASTY AND CRUNCHY</p>
+                <h2 class="center-text">Book a Table</h2>
+                <p class="center-text">Reserve your table now for a taste of culinary perfection. <br>Indulge in an unforgettable dining experience with us</p>
+
+
+<form class="form-mainpage booking-form" action="{{ url_for('book') }}" method="post" >
+    {{ form.csrf_token }}
+    
+    <div class="form-group">
+      <label for="date" id="date">Date:</label>
+      {{ form.date }}
+    </div>
+
+    <div class="form-group">
+      <label for="time" id="time">Time:</label>
+      {{ form.time }}
+      <small>We are open from 13:00 to 00:00</small>
+    </div>
+
+    <div class="form-group">
+      <label for="num_people" id="num_people">Number of People:</label>
+      {{ form.num_people }}
+    </div>
+
+    <div class="form-group">
+      <label for="name" id="name">Your Name:</label>
+      {{ form.name }}
+    </div>
+
+    <button type="submit" class="submit-button">Submit Reservation</button>
+  </form>
+
+            </div>
+
+    </div>
+</section>
+
+{% endblock %}
