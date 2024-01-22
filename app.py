@@ -137,6 +137,10 @@ def chefs():
 def menu():
     return render_template('menu.html')
 
+@app.route('/bookings')
+def view_bookings():
+    bookings = Booking.query.all()
+    return render_template('bookings.html', bookings=bookings)
 
 
 if __name__ == '__main__':
