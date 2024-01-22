@@ -386,7 +386,7 @@ footer a:hover{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 30px;
     overflow: hidden;
     margin-bottom: 30px;
     color: #234126;
@@ -427,6 +427,9 @@ footer a:hover{
         order: initial; 
         text-align: left;
         margin-bottom: 10px; 
+    }
+    .text-section{
+        margin-left: 0;
     }
     .image-section{
         text-align: center;
