@@ -243,7 +243,7 @@ nav h2{
 }
 
 .offer-section{
-    padding: 100px 80px;
+    padding: 100px 30px;
     width: 85%;
     margin: 0 auto;
     color: #234126 !important;
@@ -266,9 +266,9 @@ nav h2{
     background-color: #fff;
 }
 .reservation-form {
-    max-width: 70%;
-    margin: auto;
-    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 30px;
 
 }
 
@@ -655,12 +655,12 @@ footer a:hover{
     color: #234126;
 }
 .aboutus-cards {
-    max-width: 75%;
+    mwidth: 85%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
-    padding: 20px;
+    padding: 20px 30px;
     justify-content: center;
 }
 
